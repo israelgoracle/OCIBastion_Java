@@ -1,0 +1,46 @@
+{
+  "formatVersion": 2,
+  "savedConnections": [
+    {
+      "id": "FAAD5AB3-62A4-41B8-8779-73CD8D74B269",
+      "name": "Example forwarding connection",
+      "snapshot": {
+        "configPath": "/example/.oci/config",
+        "profile": "DEFAULT",
+        "compartmentID": "ocid1.compartment.example",
+        "bastionID": "ocid1.bastion.example",
+        "publicKeyPath": "/example/bastion.pub",
+        "privateKeyPath": "/example/bastion.key",
+        "socksPort": 2222,
+        "ttlSeconds": 10800,
+        "proxyHost": "",
+        "proxyPort": 0,
+        "proxyMode": "direct",
+        "terminalApp": "terminal",
+        "destinations": [
+          {
+            "id": "DC3D3A55-417F-44D2-B118-5807A948F3D4",
+            "name": "Private instance",
+            "host": "192.0.2.10",
+            "user": "opc",
+            "port": 22,
+            "privateKeyPath": "/example/instance.key"
+          }
+        ],
+        "tunnels": [
+          {
+            "id": "605A438D-DF84-4888-9AB6-7506A3237343",
+            "name": "Example service",
+            "host": "192.0.2.10",
+            "user": "opc",
+            "sshPort": 22,
+            "privateKeyPath": "/example/instance.key",
+            "localPort": 19081,
+            "remoteHost": "127.0.0.1",
+            "remotePort": 9081
+          }
+        ]
+      }
+    }
+  ]
+}

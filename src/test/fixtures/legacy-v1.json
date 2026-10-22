@@ -1,0 +1,36 @@
+{
+  "formatVersion": 1,
+  "current": {
+    "configPath": "/example/.oci/config",
+    "profile": "EXAMPLE",
+    "compartmentID": "ocid1.compartment.example",
+    "bastionID": "ocid1.bastion.example",
+    "publicKeyPath": "/example/bastion.pub",
+    "privateKeyPath": "/example/bastion.key",
+    "socksPort": 2222,
+    "ttlSeconds": 10800,
+    "proxyHost": "proxy.example",
+    "proxyPort": 8080,
+    "destinations": []
+  },
+  "savedConnections": [
+    {
+      "id": "8CA416BA-106B-45F6-9B83-34A10667E0EC",
+      "name": "Example legacy connection",
+      "snapshot": {
+        "configPath": "/example/.oci/config",
+        "profile": "EXAMPLE",
+        "compartmentID": "ocid1.compartment.example",
+        "bastionID": "ocid1.bastion.example",
+        "publicKeyPath": "/example/bastion.pub",
+        "privateKeyPath": "/example/bastion.key",
+        "socksPort": 2222,
+        "ttlSeconds": 10800,
+        "proxyHost": "",
+        "proxyPort": 0,
+        "destinations": []
+      }
+    }
+  ],
+  "selectedSavedConnectionID": "8CA416BA-106B-45F6-9B83-34A10667E0EC"
+}

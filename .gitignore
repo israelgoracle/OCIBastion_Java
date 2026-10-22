@@ -1,0 +1,15 @@
+build/
+*.log
+.idea/
+*.iml
+.DS_Store
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.pub
+**/.oci/
+**/settings.json
+**/owned-tunnel.json
